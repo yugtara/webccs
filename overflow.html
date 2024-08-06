@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            border: 1px solid red;
+            height: 300px;
+            width: 300px;
+            margin: 0px auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .box img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+
+        }
+
+        button {
+            padding: 10px;
+            background-color: green;
+            color: white;
+            border: none;
+            position: absolute;
+            top: 50%;
+            left: -100%;
+            transform: translate(-50%, -50%);
+            transition: all 0.5s linear;
+
+        }
+
+        .box:hover button {
+            left: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="https://turio-wp.b-cdn.net/wp-content/uploads/2023/08/paris-1.png " alt="">
+        <button>Book Now</button>
+    </div>
+
+
+
+</body>
+
+</html>

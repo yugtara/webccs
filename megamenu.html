@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<Style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    header {
+        background-color: rgb(6, 6, 6);
+        padding: 10px 50px;
+        color: white;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    header ul li {
+        display: inline-block;
+        margin-right: 20px;
+        position: relative;
+    }
+
+    header ul li ul {
+        position: absolute;
+        top: 100%;
+        left: 0px;
+        background-color: black;
+        display: none;
+        padding-top: 10px;
+    }
+
+    header ul li ul li {
+        display: block;
+        padding: 0px 20px 10px;
+        margin-right: 0;
+    }
+
+    header ul li:hover ul {
+        display: block;
+    }
+
+    header ul li ul li:hover {
+        background-color: green;
+    }
+
+    header ul li ul li ul {
+        left: 100%;
+        top: 0;
+        display: none !important;
+    }
+
+    header ul li ul li:hover ul {
+        display: block !important;
+    }
+</Style>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Destination</a>
+                    <ul>
+                        <li><a href="">Inbound</a></li>
+                        <li><a href="">Outbound</a>
+                            <ul>
+                                <li><a href="">China</a></li>
+                                <li><a href="">Tibet</a></li>
+                                <li><a href="">India</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a href="">Blog</a></li>
+
+                <li><a href="">Gallery</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Contact Us</a></li>
+
+
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
